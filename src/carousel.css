@@ -1,0 +1,104 @@
+/* Estilos básicos para o carrossel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.carousel-track-container:active {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  will-change: transform;
+}
+
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navegação */
+.carousel-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-nav-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel-nav-button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .carousel-indicator {
+    width: 8px;
+    height: 8px;
+  }
+} 

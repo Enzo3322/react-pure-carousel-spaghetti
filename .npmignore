@@ -1,0 +1,32 @@
+# Source files
+src/
+
+# Development files
+example/
+.vscode/
+.idea/
+.git/
+.github/
+.gitignore
+
+# Configuration files
+tsconfig.json
+rollup.config.js
+.prettierrc
+.eslintrc
+.babelrc
+
+# Build tools
+node_modules/
+
+# Misc
+*.log
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
