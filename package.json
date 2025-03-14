@@ -1,5 +1,5 @@
 {
-  "name": "react-fractional-carousel",
+  "name": "react-pure-carousel-spaghetti",
   "version": "1.0.0",
   "description": "A pure React carousel library with lazy loading and fractional items per view",
   "main": "dist/index.js",
@@ -26,16 +26,16 @@
     "swipe",
     "touch"
   ],
-  "author": "Your Name <your.email@example.com> (https://yourwebsite.com)",
+  "author": "Enzo3322 <enzo.spag14@gmail.com> (https://github.com/Enzo3322)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/react-pure-carousel-spaghetti.git"
+    "url": "git+https://github.com/Enzo3322/react-pure-carousel-spaghetti.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-pure-carousel-spaghetti/issues"
+    "url": "https://github.com/Enzo3322/react-pure-carousel-spaghetti/issues"
   },
-  "homepage": "https://github.com/yourusername/react-pure-carousel-spaghetti#readme",
+  "homepage": "https://github.com/Enzo3322/react-pure-carousel-spaghetti/#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
